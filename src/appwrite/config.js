@@ -130,7 +130,7 @@ export class Service {
     try {
       return this.bucket.getFileView(conf.appwriteBucketId, fileId).toString();
     } catch (error) {
-      console.error("Appwrite Service :: getFilePreview ::", error); // 👈 wrong label
+      console.error("Appwrite Service :: getFileView ::", error); 
       return "";
     }
   }
